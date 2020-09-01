@@ -1,0 +1,25 @@
+{
+  "name": "aula15",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sistema-de-vendas/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroCicc/aula15.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PedroCicc/aula15/issues"
+  },
+  "homepage": "https://github.com/PedroCicc/aula15#readme",
+  "description": ""
+}
