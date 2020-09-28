@@ -1,6 +1,6 @@
 /**
  * Criando o servidor
- */ 
+ */
 const Koa = require('koa');
 const bodyparser = require('koa-bodyparser');
 
@@ -15,4 +15,6 @@ server.use(bodyparser());
 
 server.use(router.routes());
 
-server.listen(PORT, () => console.log(`O servidor está rodando na porta ${PORT}.`));
+server.listen(PORT, () =>
+	console.log(`O servidor está rodando na porta ${PORT}.`)
+);
