@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "titulo": "Senhor dos Aneis, Volume I",
+        "autor": "Tolkien",
+        "deletado": false
+    },
+    {
+        "id": "2",
+        "titulo": "Mistborn - Nascidos da Bruma",
+        "autor": "Brandon Sanderson",
+        "deletado": false
+    },
+    {
+        "id": "3",
+        "titulo": "Arquivos de Dresden - Frente de Tormenta",
+        "autor": "Jim Butcher",
+        "deletado": false
+    },
+    {
+        "id": "4",
+        "titulo": "Arquivos de Dresden - Lua Cheia",
+        "autor": "Jim Butcher",
+        "deletado": false
+    },
+    {
+        "titulo": "Harry Potter and the Goblet of Fire",
+        "autor": "J.K. Rowling",
+        "id": 5,
+        "deletado": false
+    }
+]
