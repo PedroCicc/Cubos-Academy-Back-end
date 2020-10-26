@@ -1,12 +1,8 @@
 const Router = require('koa-router');
-const Hello = require('./controllers/hello');
+const Jogos = require('./controllers/jogos');
 
 const router = new Router();
 
-router.get('/hello', Hello.hello);
-
-router.get('/logger', (ctx) => {
-	ctx.body = 'Logger!';
-});
+router.get('/jogos/:rodada', Jogos.obterJogos);
 
 module.exports = router;
