@@ -1,10 +1,20 @@
 const response = require('./response');
-const Jogos = require('../respositories/jogos');
+const JogosDB = require('../respositories/jogosdb');
 
-const obterJogos = async (ctx) => {
-	const { rodada } = ctx.params;
-	const result = await Jogos.obterJogos(rodada);
-	return response(ctx, 200, result);
+const obterJogosDeUmaRodada = async (ctx) => {
+	const { rodada = null } = ctx.params;
+
+	if (rodada !== null) {
+		const result = await JogosDB.obterJogosDeUmaRodada(rodada);
+
+		if (result) {
+			return response(ctx, 200, result);
+		}
+
+		return response(ctx, 400, {
+			mensagem: 'A rodada deve ser um número entre 1 e 38.',
+		});
+	}
 };
 
-module.exports = { obterJogos };
+module.exports = { obterJogosDeUmaRodada };

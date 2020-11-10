@@ -3,6 +3,6 @@ const Jogos = require('./controllers/jogos');
 
 const router = new Router();
 
-router.get('/jogos/:rodada', Jogos.obterJogos);
+router.get('/jogos/:rodada', Jogos.obterJogosDeUmaRodada);
 
 module.exports = router;
