@@ -1,7 +1,7 @@
 const response = require('./response');
-const JogosDB = require('../respositories/jogosdb');
+const JogosDB = require('../repositories/jogosdb');
 
-const obterJogosDeUmaRodada = async (ctx) => {
+async function obterJogosDeUmaRodada(ctx) {
 	const { rodada = null } = ctx.params;
 
 	if (rodada !== null) {
@@ -15,6 +15,7 @@ const obterJogosDeUmaRodada = async (ctx) => {
 			mensagem: 'A rodada deve ser um número entre 1 e 38.',
 		});
 	}
-};
+	return response(ctx, 400, { mensagem: 'Mal formatado.' });
+}
 
 module.exports = { obterJogosDeUmaRodada };
